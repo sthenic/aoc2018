@@ -19,5 +19,5 @@ proc find_repeated_frequency(filename: string): int =
             break
 
 
-when isMainModule:
+when is_main_module:
    echo "Repeated frequency: ", find_repeated_frequency("input.txt"), "\n"
