@@ -1,8 +1,6 @@
 import nre
 import strutils
 import sequtils
-import tables
-import math
 
 type
    Claim = object
