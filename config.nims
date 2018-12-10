@@ -7,8 +7,8 @@ task build, "Compile and run.":
 
    let day = paramStr(2)
    withDir("src" / day):
-      exec("nim c -d:release --passC:-flto --passL:-s --gc:markAndSweep part1")
-      exec("nim c -d:release --passC:-flto --passL:-s --gc:markAndSweep part2")
+      exec("nim c -d:release part1")
+      exec("nim c -d:release part2")
       echo "---- Day ", day, ", part 1 ----"
       exec("./part1")
       echo "---- Day ", day, ", part 2 ----"
